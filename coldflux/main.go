@@ -105,6 +105,7 @@ func (c *collectdCollector) influxWrite() {
 					value = float64(v)
 				case api.Counter:
 					value = float64(v)
+					fmt.Print("counter")
 				default:
 					fmt.Print("Unknown Type")
 				}
